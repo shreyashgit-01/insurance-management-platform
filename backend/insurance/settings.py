@@ -99,10 +99,9 @@ WSGI_APPLICATION = 'insurance.wsgi.application'
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    "default": env.db(
+        default=f"sqlite:///{BASE_DIR / 'db.sqlite3'}"
+    )
 }
 
 
@@ -172,15 +171,12 @@ SIMPLE_JWT = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    "https://insurance-management-platform-x9f3-git-main-shreyashgit-2.vercel.app",
+    "https://insurance-management-platform-x9f3.vercel.app",
 ]
-
-CORS_ALLOW_CREDENTIALS = True
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://insurance-management-platform-x9f3-git-main-shreyashgit-2.vercel.app",
+    "https://insurance-management-platform-x9f3.vercel.app",
 ]
-
 CORS_ALLOW_CREDENTIALS = True
 AUTH_USER_MODEL = "users.User"
 MEDIA_URL = "/media/"
