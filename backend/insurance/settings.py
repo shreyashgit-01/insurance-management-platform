@@ -164,6 +164,11 @@ SIMPLE_JWT = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "https://insurance-management-platform-x9f3.vercel.app",
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://insurance-management-platform-x9f3.vercel.app",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
