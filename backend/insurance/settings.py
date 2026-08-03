@@ -29,7 +29,11 @@ SECRET_KEY = env("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DEBUG", default=True)
 
-ALLOWED_HOSTS = env.list("ALLOWED_HOSTS", default=["127.0.0.1", "localhost"])
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "localhost",
+    ".railway.app",
+]
 
 
 # Application definition
@@ -164,11 +168,12 @@ SIMPLE_JWT = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    "https://insurance-management-platform-x9f3.vercel.app",
+    "https://insurance-management-platform-x9f3-git-main-shreyashgit-2.vercel.app",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://insurance-management-platform-x9f3.vercel.app",
+    "https://insurance-management-platform.vercel.app",
+    "https://insurance-management-platform-x9f3-git-main-shreyashgit-2.vercel.app",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
