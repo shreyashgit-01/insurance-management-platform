@@ -1,0 +1,111 @@
+:root{
+
+    --primary:#4F46E5;
+    --primary-light:#EEF2FF;
+
+    --secondary:#6366F1;
+
+    --success:#22C55E;
+
+    --warning:#F59E0B;
+
+    --danger:#EF4444;
+
+    --dark:#111827;
+
+    --gray:#6B7280;
+
+    --border:#E5E7EB;
+
+    --background:#F5F7FB;
+
+    --white:#FFFFFF;
+
+    --shadow:0 8px 30px rgba(0,0,0,.08);
+
+    --radius:18px;
+
+    --transition:.25s ease;
+}
+
+body{
+
+    background:var(--background);
+
+    font-family:
+    Inter,
+    "Segoe UI",
+    sans-serif;
+
+    color:var(--dark);
+}
+
+.card{
+
+    border:none;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+}
+
+.card:hover{
+
+    transform:translateY(-3px);
+}
+
+.btn{
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+}
+
+.btn:hover{
+
+    transform:translateY(-2px);
+}
+
+.form-control{
+
+    border-radius:12px;
+
+    border:1px solid var(--border);
+
+    padding:.75rem 1rem;
+}
+
+.form-control:focus{
+
+    box-shadow:none;
+
+    border-color:var(--primary);
+}
+
+.table{
+
+    margin:0;
+}
+
+.table thead{
+
+    background:#F9FAFB;
+}
+
+.table th{
+
+    font-weight:600;
+
+    color:#374151;
+
+    border:none;
+}
+
+.table td{
+
+    vertical-align:middle;
+}

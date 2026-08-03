@@ -1,0 +1,112 @@
+/* ==========================================================
+   GLOBAL RESET
+========================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #F5F7FB;
+  color: #1E293B;
+  overflow-x: hidden;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==========================================================
+   GLOBAL CARD
+========================================================== */
+
+.card {
+  border: none !important;
+  border-radius: 18px !important;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06) !important;
+}
+
+/* ==========================================================
+   TABLES
+========================================================== */
+
+.table {
+  margin-bottom: 0;
+}
+
+.table thead th {
+  background: #111827 !important;
+  color: white !important;
+  border: none !important;
+  font-weight: 600;
+  padding: 14px 16px;
+  vertical-align: middle;
+}
+
+.table tbody td {
+  padding: 14px 16px;
+  vertical-align: middle;
+}
+
+.table-hover tbody tr:hover {
+  background: #F8FAFC;
+  transition: .2s;
+}
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+.btn {
+  border-radius: 10px !important;
+  font-weight: 600;
+}
+
+.btn-sm {
+  padding: 6px 12px;
+}
+
+/* ==========================================================
+   FORM
+========================================================== */
+
+.form-control,
+.form-select {
+  border-radius: 10px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: 0 0 0 .2rem rgba(79,70,229,.15);
+  border-color: #4F46E5;
+}
+
+/* ==========================================================
+   BADGES
+========================================================== */
+
+.badge {
+  border-radius: 30px;
+  padding: 8px 14px;
+  font-size: 12px;
+}
+
+/* ==========================================================
+   PAGINATION
+========================================================== */
+
+.page-link {
+  border-radius: 10px !important;
+  margin: 0 3px;
+}

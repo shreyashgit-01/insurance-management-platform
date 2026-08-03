@@ -1,0 +1,63 @@
+.dashboard-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+}
+
+.dashboard-greeting{
+
+    font-size:34px;
+
+    font-weight:700;
+
+    color:#111827;
+
+    margin-bottom:8px;
+}
+
+.dashboard-subtitle{
+
+    color:#6B7280;
+
+    font-size:16px;
+
+    margin:0;
+}
+
+.date-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:18px 25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+    text-align:right;
+}
+
+.date-label{
+
+    color:#6B7280;
+
+    font-size:14px;
+}
+
+.date-value{
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:#111827;
+}

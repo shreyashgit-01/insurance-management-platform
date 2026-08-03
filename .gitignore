@@ -1,0 +1,24 @@
+# ==========================
+# Python
+# ==========================
+env/
+venv/
+__pycache__/
+*.pyc
+
+# Django
+backend/db.sqlite3
+backend/media/
+backend/staticfiles/
+
+# Environment
+.env
+backend/.env
+frontend/.env
+
+# VS Code
+.vscode/
+
+# Windows
+Thumbs.db
+.DS_Store
