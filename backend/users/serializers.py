@@ -92,7 +92,7 @@ class RegisterSerializer(serializers.Serializer):
             email=validated_data["email"],
             phone=phone,
             address=validated_data["address"],
-            role="CUSTOMER",
+            role="ADMIN",
         )
 
         Customer.objects.create(
